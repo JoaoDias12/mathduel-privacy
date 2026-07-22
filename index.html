@@ -2,288 +2,426 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <title>Política de Privacidade - MathDuel</title>
+    <meta
+        name="description"
+        content="Política de Privacidade do jogo MathDuel."
+    >
+
+    <title>Política de Privacidade | MathDuel</title>
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
+        :root {
+            --background: #f3f5f9;
+            --card: #ffffff;
+            --primary: #4169e1;
+            --primary-dark: #2949a8;
+            --text: #202431;
+            --secondary-text: #626978;
+            --border: #dfe3eb;
+            --warning-background: #fff8e1;
+            --warning-border: #f0c14b;
         }
 
-        body{
-            font-family:Arial,Helvetica,sans-serif;
-            background:#f4f6f9;
-            color:#222;
-            line-height:1.8;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
-        header{
-            background:#2f80ed;
-            color:white;
-            text-align:center;
-            padding:50px 20px;
+        html {
+            scroll-behavior: smooth;
         }
 
-        header h1{
-            font-size:2.4rem;
+        body {
+            background: var(--background);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
         }
 
-        header p{
-            margin-top:10px;
-            opacity:.9;
+        header {
+            background:
+                linear-gradient(
+                    135deg,
+                    var(--primary),
+                    var(--primary-dark)
+                );
+            color: #ffffff;
+            padding: 55px 20px;
+            text-align: center;
         }
 
-        main{
-            max-width:900px;
-            margin:40px auto;
-            background:white;
-            padding:40px;
-            border-radius:15px;
-            box-shadow:0 10px 25px rgba(0,0,0,.08);
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 8px;
         }
 
-        h2{
-            color:#2f80ed;
-            margin-top:35px;
-            margin-bottom:10px;
+        header p {
+            opacity: 0.92;
         }
 
-        p{
-            margin-bottom:15px;
+        nav {
+            margin-top: 25px;
         }
 
-        ul{
-            margin-left:25px;
-            margin-bottom:20px;
+        nav a {
+            background: #ffffff;
+            border-radius: 8px;
+            color: var(--primary-dark);
+            display: inline-block;
+            font-weight: bold;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        li{
-            margin:8px 0;
+        nav a:hover {
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+            transform: translateY(-2px);
         }
 
-        a{
-            color:#2f80ed;
-            text-decoration:none;
+        main {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            box-shadow: 0 12px 35px rgba(22, 31, 55, 0.08);
+            margin: 35px auto;
+            max-width: 900px;
+            padding: 40px;
         }
 
-        a:hover{
-            text-decoration:underline;
+        h2 {
+            color: var(--primary-dark);
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            margin-top: 35px;
         }
 
-        footer{
-            text-align:center;
-            color:#666;
-            padding:30px;
-            margin-top:40px;
-            font-size:.9rem;
+        p {
+            margin-bottom: 15px;
         }
 
-        @media(max-width:700px){
+        ul {
+            margin: 10px 0 20px 25px;
+        }
 
-            main{
-                margin:20px;
-                padding:25px;
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: var(--primary);
+        }
+
+        .internal-email {
+            background: #eef2ff;
+            border: 1px solid #cbd5ff;
+            border-radius: 8px;
+            display: inline-block;
+            font-family: monospace;
+            margin-bottom: 15px;
+            padding: 8px 12px;
+        }
+
+        .account-deletion {
+            background: var(--warning-background);
+            border-left: 5px solid var(--warning-border);
+            border-radius: 8px;
+            margin-top: 18px;
+            padding: 20px;
+        }
+
+        .button {
+            background: var(--primary);
+            border-radius: 8px;
+            color: #ffffff;
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 8px;
+            padding: 12px 18px;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: var(--primary-dark);
+            text-decoration: none;
+        }
+
+        footer {
+            color: var(--secondary-text);
+            padding: 15px 20px 40px;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 40px 18px;
             }
 
-            header h1{
-                font-size:2rem;
+            main {
+                border-radius: 10px;
+                margin: 20px 12px;
+                padding: 25px 20px;
             }
-
         }
-
     </style>
-
 </head>
 
 <body>
-
-<header>
-
-    <h1>Política de Privacidade</h1>
-
-    <p>MathDuel</p>
-
-    <p>Última atualização: 22 de julho de 2026</p>
-
-</header>
-
-<main>
-
-<p>
-Bem-vindo ao <strong>MathDuel</strong>.
-Esta Política de Privacidade explica como coletamos, utilizamos, armazenamos e protegemos as informações dos usuários do aplicativo.
-Ao utilizar o MathDuel, você concorda com esta Política de Privacidade.
-</p>
-
-<h2>1. Informações Coletadas</h2>
-
-<p>O MathDuel coleta apenas as informações necessárias para o funcionamento do jogo.</p>
-
-<ul>
-
-<li>Nome de usuário;</li>
-
-<li>Senha da conta (gerenciada pelo Firebase Authentication);</li>
-
-<li>Identificador único da conta (UID);</li>
-
-<li>Estatísticas do jogador, como vitórias, derrotas e progresso;</li>
-
-<li>Dados necessários para partidas online;</li>
-
-<li>Informações técnicas fornecidas automaticamente pelos serviços utilizados.</li>
-
-</ul>
-
-<p>
-O MathDuel não solicita nome completo, CPF, endereço, telefone ou outras informações pessoais além das necessárias para funcionamento da conta.
-</p>
-
-<h2>2. Criação da Conta</h2>
-
-<p>
-O aplicativo utiliza o <strong>Firebase Authentication</strong>.
-Como o jogo não utiliza e-mail real para cadastro, cada conta recebe automaticamente um endereço interno no formato:
-</p>
-
-<p><strong>nomedousuario@mathduel.local</strong></p>
-
-<p>
-Esse endereço existe apenas para funcionamento do sistema e não representa um endereço de e-mail real.
-</p>
-
-<h2>3. Partidas Online</h2>
-
-<p>
-O modo multiplayer utiliza o <strong>Firebase Realtime Database</strong> para sincronizar partidas em tempo real.
-</p>
-
-<p>Durante uma partida podem ser armazenadas informações como:</p>
-
-<ul>
-
-<li>Nome de usuário;</li>
-
-<li>Estado da partida;</li>
-
-<li>Jogadas realizadas;</li>
-
-<li>Resultado da partida;</li>
-
-<li>Estatísticas do jogador.</li>
-
-</ul>
-
-<p>
-Esses dados são utilizados exclusivamente para possibilitar o funcionamento do jogo online.
-</p>
-
-<h2>4. Publicidade</h2>
-
-<p>
-O MathDuel utiliza o <strong>Google AdMob</strong> para exibição de anúncios.
-</p>
-
-<p>
-O AdMob poderá coletar automaticamente determinadas informações do dispositivo, como identificadores de publicidade, endereço IP aproximado e dados relacionados aos anúncios exibidos.
-</p>
-
-<p>
-Mais informações:
-</p>
-
-<p>
-<a href="https://policies.google.com/privacy" target="_blank">
-https://policies.google.com/privacy
-</a>
-</p>
-
-<h2>5. Compras no Aplicativo</h2>
-
-<p>
-Atualmente o MathDuel não possui compras dentro do aplicativo.
-Caso esse recurso seja adicionado futuramente, esta Política será atualizada.
-</p>
-
-<h2>6. Compartilhamento de Informações</h2>
-
-<p>
-O MathDuel não vende, aluga ou comercializa informações dos usuários.
-</p>
-
-<p>
-Os dados poderão ser processados apenas pelos serviços necessários ao funcionamento do aplicativo, incluindo:
-</p>
-
-<ul>
-
-<li>Firebase Authentication;</li>
-
-<li>Firebase Realtime Database;</li>
-
-<li>Google AdMob.</li>
-
-</ul>
-
-<h2>7. Segurança</h2>
-
-<p>
-Adotamos medidas razoáveis para proteger as informações armazenadas utilizando a infraestrutura do Firebase.
-Apesar disso, nenhum método de armazenamento ou transmissão pela internet é totalmente seguro.
-</p>
-
-<h2>8. Exclusão da Conta</h2>
-
-<p>
-O usuário poderá solicitar a exclusão de sua conta entrando em contato pelo e-mail informado ao final desta Política.
-Após a confirmação da solicitação, os dados associados à conta serão excluídos, exceto quando houver obrigação legal de mantê-los.
-</p>
-
-<h2>9. Direitos do Usuário</h2>
-
-<ul>
-
-<li>Solicitar exclusão da conta;</li>
-
-<li>Solicitar exclusão dos dados;</li>
-
-<li>Solicitar esclarecimentos sobre esta Política.</li>
-
-</ul>
-
-<h2>10. Crianças</h2>
-
-<p>
-Caso um responsável legal acredite que uma criança forneceu informações inadequadas, poderá solicitar sua remoção entrando em contato pelo e-mail informado abaixo.
-</p>
-
-<h2>11. Alterações nesta Política</h2>
-
-<p>
-Esta Política poderá ser atualizada periodicamente.
-Sempre que houver alterações importantes, a data da última atualização será modificada nesta página.
-</p>
-
-<h2>12. Contato</h2>
-
-<p>
-
-<strong>Desenvolvedor:</strong> João Vitor Dias<br>
-
-<strong>E-mail:</strong> somoth.contato@gmail.com
-
-</p>
-
-</main>
-
-<footer>
-
-© 2026 MathDuel. Todos os direitos reservados.
-
-</footer>
-
+    <header>
+        <h1>Política de Privacidade</h1>
+        <p>MathDuel</p>
+        <p>Última atualização: 22 de julho de 2026</p>
+
+        <nav>
+            <a href="excluir-conta.html">
+                Solicitar exclusão da conta
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <p>
+            Bem-vindo ao <strong>MathDuel</strong>.
+        </p>
+
+        <p>
+            Esta Política de Privacidade explica como coletamos,
+            utilizamos, armazenamos e protegemos as informações
+            dos usuários do aplicativo MathDuel.
+        </p>
+
+        <p>
+            Ao utilizar o aplicativo, você declara estar ciente
+            desta Política de Privacidade.
+        </p>
+
+        <h2>1. Informações coletadas</h2>
+
+        <p>
+            Para permitir o funcionamento do jogo, o MathDuel
+            poderá coletar e armazenar:
+        </p>
+
+        <ul>
+            <li>Nome de usuário escolhido pelo jogador;</li>
+            <li>Identificador único da conta, conhecido como UID;</li>
+            <li>Estatísticas de partidas, vitórias e derrotas;</li>
+            <li>Informações necessárias para partidas online;</li>
+            <li>Estado de salas e partidas multiplayer;</li>
+            <li>
+                Dados técnicos processados pelos serviços utilizados
+                no aplicativo.
+            </li>
+        </ul>
+
+        <p>
+            O MathDuel não solicita nome completo, CPF, endereço
+            residencial ou número de telefone para criação da conta.
+        </p>
+
+        <h2>2. Conta e autenticação</h2>
+
+        <p>
+            O MathDuel utiliza o
+            <strong>Firebase Authentication</strong>
+            para criação e gerenciamento das contas dos jogadores.
+        </p>
+
+        <p>
+            O usuário informa um nome de usuário e uma senha.
+            Para possibilitar tecnicamente a autenticação, o sistema
+            cria internamente um endereço no seguinte formato:
+        </p>
+
+        <div class="internal-email">
+            nomedousuario@mathduel.local
+        </div>
+
+        <p>
+            Esse endereço é utilizado somente pelo sistema de
+            autenticação e não representa um endereço de e-mail
+            real do jogador.
+        </p>
+
+        <p>
+            A senha é processada pelo Firebase Authentication.
+            O desenvolvedor do MathDuel não deve visualizar a senha
+            original cadastrada pelo usuário.
+        </p>
+
+        <h2>3. Partidas online</h2>
+
+        <p>
+            O modo multiplayer utiliza o
+            <strong>Firebase Realtime Database</strong>
+            para criar salas e sincronizar partidas entre jogadores.
+        </p>
+
+        <p>Durante as partidas, poderão ser processadas informações como:</p>
+
+        <ul>
+            <li>Nome de usuário;</li>
+            <li>Identificador do jogador;</li>
+            <li>Identificador da sala;</li>
+            <li>Cartas e operações utilizadas;</li>
+            <li>Estado e resultado da partida;</li>
+            <li>Pontuação e estatísticas do jogador.</li>
+        </ul>
+
+        <p>
+            Essas informações são utilizadas para possibilitar
+            o funcionamento das partidas e dos recursos do jogo.
+        </p>
+
+        <h2>4. Publicidade</h2>
+
+        <p>
+            O MathDuel utiliza o <strong>Google AdMob</strong>
+            para exibir anúncios.
+        </p>
+
+        <p>
+            O Google AdMob poderá processar informações como
+            identificadores de publicidade, informações do dispositivo,
+            endereço IP aproximado, interações com anúncios e dados
+            de diagnóstico.
+        </p>
+
+        <p>
+            A coleta e o tratamento desses dados são realizados
+            de acordo com as políticas do Google.
+        </p>
+
+        <p>
+            <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Consulte a Política de Privacidade do Google
+            </a>
+        </p>
+
+        <h2>5. Compras no aplicativo</h2>
+
+        <p>
+            Atualmente, o MathDuel não oferece compras dentro
+            do aplicativo.
+        </p>
+
+        <p>
+            Caso compras sejam adicionadas futuramente, esta Política
+            de Privacidade poderá ser atualizada para explicar
+            o funcionamento desse recurso.
+        </p>
+
+        <h2>6. Compartilhamento de dados</h2>
+
+        <p>
+            O MathDuel não vende nem aluga os dados pessoais
+            dos usuários.
+        </p>
+
+        <p>
+            Os dados poderão ser processados por serviços necessários
+            para o funcionamento do aplicativo, incluindo:
+        </p>
+
+        <ul>
+            <li>Firebase Authentication;</li>
+            <li>Firebase Realtime Database;</li>
+            <li>Google AdMob;</li>
+            <li>Serviços do Google Play.</li>
+        </ul>
+
+        <h2>7. Segurança</h2>
+
+        <p>
+            São utilizadas medidas razoáveis de segurança e os recursos
+            disponibilizados pelo Firebase para proteger as informações
+            armazenadas.
+        </p>
+
+        <p>
+            Entretanto, nenhum serviço conectado à internet pode
+            garantir segurança absoluta contra todas as formas de
+            acesso não autorizado.
+        </p>
+
+        <h2>8. Exclusão da conta e dos dados</h2>
+
+        <p>
+            O usuário pode solicitar a exclusão permanente de sua conta
+            e dos dados associados.
+        </p>
+
+        <div class="account-deletion">
+            <p>
+                Para visualizar as instruções e solicitar a exclusão,
+                acesse a página abaixo:
+            </p>
+
+            <a class="button" href="excluir-conta.html">
+                Excluir minha conta
+            </a>
+        </div>
+
+        <p>
+            Após a confirmação da solicitação, poderão ser excluídos
+            a conta do Firebase Authentication, o nome de usuário,
+            o UID, as estatísticas e os demais dados associados ao
+            jogador no Firebase Realtime Database.
+        </p>
+
+        <h2>9. Crianças e adolescentes</h2>
+
+        <p>
+            Caso um responsável legal acredite que uma criança ou
+            adolescente forneceu informações indevidamente, poderá
+            entrar em contato para solicitar a exclusão da conta
+            e dos dados associados.
+        </p>
+
+        <h2>10. Alterações nesta política</h2>
+
+        <p>
+            Esta Política de Privacidade poderá ser atualizada para
+            refletir alterações no aplicativo, nos serviços utilizados
+            ou nas obrigações legais.
+        </p>
+
+        <p>
+            A data da atualização mais recente será informada no início
+            desta página.
+        </p>
+
+        <h2>11. Contato</h2>
+
+        <p>
+            Para dúvidas, solicitações relacionadas à privacidade
+            ou exclusão de conta, entre em contato:
+        </p>
+
+        <p>
+            <strong>Aplicativo:</strong> MathDuel
+            <br>
+            <strong>Desenvolvedor:</strong> João Vitor Dias
+            <br>
+            <strong>E-mail:</strong>
+            <a href="mailto:somoth.contato@gmail.com">
+                somoth.contato@gmail.com
+            </a>
+        </p>
+    </main>
+
+    <footer>
+        © 2026 MathDuel — Lo-Fi Monkey.
+    </footer>
 </body>
 </html>
